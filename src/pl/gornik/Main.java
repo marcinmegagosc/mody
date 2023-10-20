@@ -13,7 +13,7 @@ public class Main {
         Product product3 = new Product("ser", "nabial", 5.50, 100, "g");
         Product product4 = new Product("chleb", "pieczywo", 3, 1, "sztuka");
         Product product5 = new Product("kielbasa", "miesne", 30, 1, "kg");
-        Product product6 = new Product("rogal", "pieczywo", 2.50, 1, "sztuka");
+        Product product6 = new Product("rogalDDL", "pieczywo", 2.50, 1, "sztuka");
 
         productList.add(product1);
         productList.add(product2);
