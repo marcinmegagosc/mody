@@ -1,5 +1,7 @@
 package pl.gornik.product;
 
+import java.util.List;
+
 public class Product {
 
     private String name;
@@ -75,5 +77,10 @@ public class Product {
         }
         return unitPrice;
     }
+
+    public void displayProduct(){
+        System.out.println("Jednostkowa cena produktu "+ sizePack + " " +unit+ " " + name + " wynosi " + calculateUnitPrice() + " zł");
+    }
+
 
 }

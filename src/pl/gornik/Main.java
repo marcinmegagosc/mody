@@ -11,9 +11,9 @@ public class Main {
         Product product1 = new Product("mleko", "nabial", 4.50, 500, "ml");
         Product product2 = new Product("olej", "tluszcze", 8.50, 1, "l");
         Product product3 = new Product("ser", "nabial", 5.50, 100, "g");
-        Product product4 = new Product("chleb", "pieczywo", 3, 1, "sztuka");
+        Product product4 = new Product("chleb", "pieczywo", 3, 1, "szt");
         Product product5 = new Product("kielbasa", "miesne", 30, 1, "kg");
-        Product product6 = new Product("rogalDDL", "pieczywo", 2.50, 1, "sztuka");
+        Product product6 = new Product("rogal", "pieczywo", 2.50, 1, "szt");
 
         productList.add(product1);
         productList.add(product2);
@@ -50,6 +50,11 @@ public class Main {
         System.out.println("-Produkty z jednostkową cena-------------------");
         for(Product product : productList){
             System.out.println("Jednostkowa cena produktu " + product.getName() + " wynosi " + product.calculateUnitPrice()+ " zł");
+        }
+
+        System.out.println("----");
+        for(Product product : productList){
+            product.displayProduct();
         }
     }
 }
